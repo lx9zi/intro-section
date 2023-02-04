@@ -21,7 +21,8 @@ const nav = document.getElementById('nav');
 const ExitButton = document.getElementById('exit-button');
 
 toggle.addEventListener('click', () => {
-    nav.style.display = 'flex'
+    toggle.classList.toggle('closeBar')
+    nav.classList.toggle('OpenNav')
 })
 
 
@@ -38,10 +39,6 @@ company.addEventListener('click', () => {
     CompanyList.classList.toggle('active');
 })
 
-
-ExitButton.addEventListener('click', () => {
-    nav.style.display = 'none'
-})
 
 
 
